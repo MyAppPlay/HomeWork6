@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.IO;
+
 class Program
 {
     static void Main(string[] args)
@@ -11,13 +12,13 @@ class Program
         ArrayList list = new ArrayList();
         // Запомним время в начале обработки данных
         DateTime dt = DateTime.Now;
-        StreamReader sr = new StreamReader("students_1.csv");
+        StreamReader sr = new StreamReader("student.csv"); ; ;
         while (!sr.EndOfStream)
         {
             try
             {
                 string[] s = sr.ReadLine().Split(';');
-                // Console.WriteLine("{0}", s[0], s[1], s[2], s[3], s[4]);
+                Console.WriteLine("{0}", s[0], s[1], s[2], s[3], s[4]);
 
 
 
@@ -38,4 +39,22 @@ class Program
         Console.WriteLine(DateTime.Now - dt);
         Console.ReadKey();
     }
+
 }
+//Дороничева;Дарья;1 курс;18 лет;
+//Карасева;Анна;2 курс;19 лет;
+//Ковыгина;Карина;3 курс;20 лет;
+//Кушаева;Ксения;4 курс;21год;
+//Смурова;Валерия;5курс;24 года;
+//Якушкина;Карина;6 курс;19 лет;
+//Акоповa;Лилия;1 курс;22 года;
+//Багиров;Эльчин;2 курс;23 года;
+//Блавацкий;Андрей;3 курс;24 года;
+//Бондаренко;Валерия;4 курс;25 лет;
+//Котельникова;Анастасия;5 курс;23 года;
+//Мусаллямова;Любовь;6 курс;25 лет;
+//Санюк;Анна;1 курс;18 лет;
+//Травкина;Юлия;2 курс;20 лет;
+//Тырыкина;Марина;3 курс; 21 год;
+//Швоева;Ксения;4 курс; 22 года;
+//Юхалова;Елизавета;5 курс; 22 года;
